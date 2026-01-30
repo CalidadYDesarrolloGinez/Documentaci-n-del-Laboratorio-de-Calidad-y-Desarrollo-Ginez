@@ -26,11 +26,11 @@ const modules = [
         active: false,
     },
     {
-        id: 'inventarios',
-        title: 'Inventarios',
-        description: 'Gestión de existencias y movimientos de almacén.',
-        icon: 'warehouse',
-        href: '/inventarios',
+        id: 'formulas',
+        title: 'Manual de Formulación Ginez',
+        description: 'Guías de fabricación y fórmulas maestras de productos.',
+        icon: 'book',
+        href: '/formulas',
         active: false,
     },
     {

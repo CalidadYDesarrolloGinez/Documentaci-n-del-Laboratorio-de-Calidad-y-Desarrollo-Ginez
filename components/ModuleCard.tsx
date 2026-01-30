@@ -13,6 +13,7 @@ import {
     FlaskConical,
     Box,
     Archive,
+    Book,
     LucideIcon
 } from 'lucide-react'
 import { getBasePath } from '@/lib/utils'
@@ -27,6 +28,7 @@ const iconMap: Record<string, LucideIcon> = {
     flask: FlaskConical,
     box: Box,
     archive: Archive,
+    book: Book,
 }
 
 interface ModuleCardProps {
