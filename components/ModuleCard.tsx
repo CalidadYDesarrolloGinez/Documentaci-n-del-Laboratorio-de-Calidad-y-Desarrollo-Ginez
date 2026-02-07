@@ -56,46 +56,48 @@ export function ModuleCard({
     const Icon = iconMap[icon] || Package
 
     const cardContent = (
-        <Card className={`relative h-full transition-all duration-200 ${active
-            ? 'hover:shadow-lg hover:border-blue-300 cursor-pointer'
-            : 'opacity-75 cursor-not-allowed'
+        <Card className={`relative h-full transition-all duration-500 overflow-hidden rounded-[2.5rem] border-slate-200/60 ${active
+            ? 'hover:shadow-[0_20px_50px_rgba(0,0,0,0.1)] hover:-translate-y-2 cursor-pointer bg-white'
+            : 'opacity-75 cursor-not-allowed bg-slate-50/50'
             }`}>
-            <CardContent className="p-6">
+            <CardContent className="p-10 flex flex-col h-full">
                 {/* Coming Soon Badge */}
                 {!active && (
-                    <div className="absolute top-4 right-4">
-                        <Badge variant="warning" className="text-xs">
+                    <div className="absolute top-6 right-6">
+                        <Badge variant="warning" className="text-[10px] font-bold uppercase tracking-wider px-3 py-1 bg-amber-100 text-amber-700 border-none">
                             Próximamente
                         </Badge>
                     </div>
                 )}
 
                 {/* Icon */}
-                <div className={`w-14 h-14 rounded-xl flex items-center justify-center mb-8 ${active
+                <div className={`w-16 h-16 rounded-[1.25rem] flex items-center justify-center mb-10 shadow-sm transition-transform duration-500 ${active
                     ? (colorClass || 'bg-blue-50 text-[#0e0c9b]')
-                    : 'bg-gray-100 text-gray-400'
-                    }`}>
-                    <Icon className="h-7 w-7" />
+                    : 'bg-slate-200 text-slate-400'
+                    } group-hover:scale-110`}>
+                    <Icon className="h-8 w-8" />
                 </div>
 
                 {/* Badge/Count Row */}
-                <div className="flex items-center gap-3 mb-4">
-                    {badge && (
-                        <div className="bg-slate-50 border border-slate-200 text-slate-500 text-[11px] font-bold px-1.5 py-0.5 rounded leading-none">
-                            {badge}
-                        </div>
-                    )}
-                    {count !== undefined && (
-                        <span className="text-[13px] text-slate-400 font-medium">{count} registros</span>
-                    )}
-                </div>
+                {(badge || count !== undefined) && (
+                    <div className="flex items-center gap-3 mb-6">
+                        {badge && (
+                            <div className="bg-slate-100/80 border border-slate-200 text-slate-500 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-tighter">
+                                {badge}
+                            </div>
+                        )}
+                        {count !== undefined && (
+                            <span className="text-[11px] text-slate-400 font-bold uppercase tracking-tight">{count} registros</span>
+                        )}
+                    </div>
+                )}
 
-                <h3 className={`font-bold text-xl mb-3 ${active ? 'text-slate-900' : 'text-slate-400'
+                <h3 className={`font-bold text-2xl mb-4 leading-tight ${active ? 'text-slate-900 group-hover:text-[#0e0c9b]' : 'text-slate-400'
                     }`}>
                     {title}
                 </h3>
 
-                <p className="text-sm text-slate-500 leading-relaxed max-w-[90%]">
+                <p className="text-sm md:text-base text-slate-500 leading-relaxed font-medium">
                     {description}
                 </p>
             </CardContent>

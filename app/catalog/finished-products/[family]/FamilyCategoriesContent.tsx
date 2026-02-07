@@ -189,21 +189,25 @@ export default function FamilyCategoriesContent({ familySlug, family }: FamilyCa
                     />
                 </div>
             ) : categories.length > 0 ? (
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     {categories.map((category) => (
                         <Link
                             key={category.slug}
                             href={`${basePath}/catalog/finished-products/${familySlug}/${category.slug}`}
                         >
-                            <Card className="h-full hover:shadow-lg hover:border-blue-300 transition-all cursor-pointer">
-                                <CardContent className="p-6">
-                                    <div className={`w-12 h-12 rounded-lg flex items-center justify-center mb-4 ${colorClass}`}>
-                                        <Package className="h-6 w-6" />
+                            <Card className="h-full hover:shadow-[0_20px_50px_rgba(0,0,0,0.1)] hover:-translate-y-2 transition-all duration-500 cursor-pointer border-slate-200/60 overflow-hidden rounded-[2.5rem] group">
+                                <CardContent className="p-10 flex flex-col h-full">
+                                    <div className={`w-14 h-14 rounded-2xl flex items-center justify-center mb-8 shadow-sm transition-all duration-500 group-hover:scale-110 group-hover:rotate-3 ${colorClass}`}>
+                                        <Package className="h-7 w-7" />
                                     </div>
-                                    <h3 className="font-semibold text-lg mb-1">{category.name}</h3>
-                                    <p className="text-sm text-muted-foreground">
-                                        {category.count} producto{category.count !== 1 ? 's' : ''}
-                                    </p>
+                                    <h3 className="font-bold text-xl mb-6 text-slate-900 group-hover:text-[#0e0c9b] transition-colors leading-tight">
+                                        {category.name}
+                                    </h3>
+                                    <div className="mt-auto">
+                                        <span className="bg-slate-50 border border-slate-100 text-slate-500 text-[11px] font-bold px-4 py-2 rounded-full whitespace-nowrap shadow-sm group-hover:bg-white group-hover:border-slate-200 transition-colors">
+                                            {category.count} producto{category.count !== 1 ? 's' : ''}
+                                        </span>
+                                    </div>
                                 </CardContent>
                             </Card>
                         </Link>
