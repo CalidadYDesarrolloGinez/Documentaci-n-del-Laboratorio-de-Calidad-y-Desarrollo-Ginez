@@ -314,7 +314,13 @@ export function getFinishedProductFamilies(): ProductFamily[] {
 
             return {
                 ...dc,
-                products,
+                products: products.map((p: any) => ({
+                    ...p,
+                    family: df.name,
+                    family_slug: df.slug,
+                    category: dc.name,
+                    category_slug: dc.slug
+                })),
                 count,
                 family: df.name,
                 family_slug: df.slug
@@ -342,6 +348,21 @@ export function getFinishedProductFamilies(): ProductFamily[] {
             count: totalCount
         } as ProductFamily
     })
+}
+
+export function getAllFinishedProducts(): FinishedProduct[] {
+    const families = getFinishedProductFamilies()
+    const allProducts: FinishedProduct[] = []
+
+    families.forEach(family => {
+        family.categories?.forEach(category => {
+            category.products?.forEach(product => {
+                allProducts.push(product)
+            })
+        })
+    })
+
+    return allProducts
 }
 
 export function getFinishedProductsCount(): number {
