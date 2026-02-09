@@ -148,7 +148,7 @@ export default function CategoryProductsContent({ familySlug, categorySlug, cate
     }, [products, searchQuery, fuse])
 
     const handleRowClick = (row: FinishedProduct) => {
-        router.push(`${basePath}/catalog/finished-products/${familySlug}/${categorySlug}/${row.sku_code}`)
+        router.push(`/catalog/finished-products/${familySlug}/${categorySlug}/${row.sku_code}`)
     }
 
     return (

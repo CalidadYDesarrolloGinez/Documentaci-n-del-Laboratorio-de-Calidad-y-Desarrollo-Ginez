@@ -108,10 +108,8 @@ export function ModuleCard({
         return cardContent
     }
 
-    const finalHref = href.startsWith('http') ? href : `${basePath}${href}`
-
     return (
-        <Link href={finalHref} legacyBehavior>
+        <Link href={href} legacyBehavior>
             {cardContent}
         </Link>
     )

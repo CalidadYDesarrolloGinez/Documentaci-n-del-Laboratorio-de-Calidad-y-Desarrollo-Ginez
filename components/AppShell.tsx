@@ -16,7 +16,7 @@ export function AppShell({ children }: AppShellProps) {
             <header className="bg-[#0e0c9b] text-white shadow-lg">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex items-center justify-between h-16">
-                        <Link href={`${basePath}/`} className="flex items-center gap-3">
+                        <Link href="/" className="flex items-center gap-3">
                             <div className="flex items-center">
                                 <img
                                     src={`${basePath}/logo.png`}
@@ -32,13 +32,13 @@ export function AppShell({ children }: AppShellProps) {
 
                         <nav className="flex items-center gap-2">
                             <Link
-                                href={`${basePath}/`}
+                                href="/"
                                 className="px-3 py-1.5 rounded-md text-sm font-medium hover:bg-white/10 transition-colors"
                             >
                                 Panel
                             </Link>
                             <Link
-                                href={`${basePath}/catalog`}
+                                href="/catalog"
                                 className="px-3 py-1.5 rounded-md text-sm font-medium hover:bg-white/10 transition-colors"
                             >
                                 Catálogo

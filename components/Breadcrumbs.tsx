@@ -19,7 +19,7 @@ export function Breadcrumbs({ items }: BreadcrumbsProps) {
     return (
         <nav className="flex items-center space-x-1 text-sm text-muted-foreground mb-4">
             <Link
-                href={`${basePath}/`}
+                href="/"
                 className="flex items-center hover:text-foreground transition-colors"
             >
                 <Home className="h-4 w-4" />
@@ -30,7 +30,7 @@ export function Breadcrumbs({ items }: BreadcrumbsProps) {
                     <ChevronRight className="h-4 w-4 mx-1" />
                     {item.href ? (
                         <Link
-                            href={`${basePath}${item.href}`}
+                            href={item.href}
                             className="hover:text-foreground transition-colors hover:underline"
                         >
                             {item.label}

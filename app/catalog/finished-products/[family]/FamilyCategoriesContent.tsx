@@ -147,7 +147,7 @@ export default function FamilyCategoriesContent({ familySlug, family }: FamilyCa
     }, [tableProducts, searchQuery, fuse])
 
     const handleRowClick = (row: FinishedProduct) => {
-        router.push(`${basePath}/catalog/finished-products/${familySlug}/general/${row.sku_code}`)
+        router.push(`/catalog/finished-products/${familySlug}/general/${row.sku_code}`)
     }
 
     return (
@@ -193,7 +193,7 @@ export default function FamilyCategoriesContent({ familySlug, family }: FamilyCa
                     {categories.map((category) => (
                         <Link
                             key={category.slug}
-                            href={`${basePath}/catalog/finished-products/${familySlug}/${category.slug}`}
+                            href={`/catalog/finished-products/${familySlug}/${category.slug}`}
                         >
                             <Card className="h-full hover:shadow-[0_20px_50px_rgba(0,0,0,0.1)] hover:-translate-y-2 transition-all duration-500 cursor-pointer border-slate-200/60 overflow-hidden rounded-[2.5rem] group">
                                 <CardContent className="p-10 flex flex-col h-full">

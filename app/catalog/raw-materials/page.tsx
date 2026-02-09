@@ -200,7 +200,7 @@ export default function RawMaterialsPage() {
     }, [materials, searchQuery, activeFilters, fuse])
 
     const handleRowClick = (row: RawMaterial) => {
-        router.push(`${basePath}/catalog/raw-materials/${row.code}`)
+        router.push(`/catalog/raw-materials/${row.code}`)
     }
 
     const handleFilterChange = (categoryId: string, values: string[]) => {
