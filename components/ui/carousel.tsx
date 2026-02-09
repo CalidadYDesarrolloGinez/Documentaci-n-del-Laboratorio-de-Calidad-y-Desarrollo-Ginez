@@ -9,11 +9,13 @@ import { ArrowLeft, ArrowRight } from "lucide-react"
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
 
+export type CarouselApi = UseEmblaCarouselType[1]
+
 type CarouselProps = {
-    opts?: UseEmblaCarouselType[1]
-    plugins?: UseEmblaCarouselType[2]
+    opts?: Parameters<typeof useEmblaCarousel>[0]
+    plugins?: Parameters<typeof useEmblaCarousel>[1]
     orientation?: "horizontal" | "vertical"
-    setApi?: (api: UseEmblaCarouselType[0]) => void
+    setApi?: (api: UseEmblaCarouselType[1]) => void
 }
 
 type CarouselContextProps = {
@@ -63,7 +65,7 @@ const Carousel = React.forwardRef<
         const [canScrollPrev, setCanScrollPrev] = React.useState(false)
         const [canScrollNext, setCanScrollNext] = React.useState(false)
 
-        const onSelect = React.useCallback((api: UseEmblaCarouselType[0]) => {
+        const onSelect = React.useCallback((api: CarouselApi) => {
             if (!api) {
                 return
             }
@@ -248,7 +250,6 @@ const CarouselNext = React.forwardRef<
 CarouselNext.displayName = "CarouselNext"
 
 export {
-    type CarouselApi,
     Carousel,
     CarouselContent,
     CarouselItem,
