@@ -79,7 +79,7 @@ export function ProductQuickSearch({ products }: ProductQuickSearchProps) {
                                 {results.map(({ item }) => (
                                     <Link
                                         key={item.sku_code}
-                                        href={`${basePath}/catalog/finished-products/${item.family_slug}/${item.category_slug}/${item.sku_code}`}
+                                        href={`/catalog/finished-products/${item.family_slug}/${item.category_slug}/${item.sku_code}`}
                                         className="flex items-center gap-4 px-4 py-3 hover:bg-blue-50 transition-colors group"
                                         onClick={() => setIsOpen(false)}
                                     >

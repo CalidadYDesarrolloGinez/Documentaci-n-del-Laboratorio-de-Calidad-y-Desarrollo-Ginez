@@ -109,7 +109,7 @@ export function ModuleCard({
     }
 
     return (
-        <Link href={href} legacyBehavior>
+        <Link href={href}>
             {cardContent}
         </Link>
     )

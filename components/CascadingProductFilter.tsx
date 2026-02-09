@@ -46,7 +46,7 @@ export function CascadingProductFilter({ families }: CascadingProductFilterProps
 
     const handleGo = () => {
         if (selectedProduct) {
-            router.push(`${basePath}/catalog/finished-products/${selectedProduct.family_slug}/${selectedProduct.category_slug}/${selectedProduct.sku_code}`)
+            router.push(`/catalog/finished-products/${selectedProduct.family_slug}/${selectedProduct.category_slug}/${selectedProduct.sku_code}`)
         }
     }
 

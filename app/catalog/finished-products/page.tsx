@@ -57,7 +57,7 @@ export default function FinishedProductsPage() {
                     return (
                         <Link
                             key={family.slug}
-                            href={`${basePath}/catalog/finished-products/${family.slug}`}
+                            href={`/catalog/finished-products/${family.slug}`}
                             className="w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.5rem)] min-w-[320px] max-w-[400px]"
                         >
                             <Card className="h-full hover:shadow-[0_20px_50px_rgba(0,0,0,0.1)] hover:-translate-y-2 transition-all duration-500 cursor-pointer border-slate-200/60 group overflow-hidden rounded-[2.5rem] bg-white">
