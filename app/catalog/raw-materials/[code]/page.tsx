@@ -13,6 +13,11 @@ export const dynamicParams = false
 // Generate static paths for all raw materials
 export async function generateStaticParams() {
     const materials = getRawMaterials()
+
+    if (!materials || materials.length === 0) {
+        return [{ code: 'placeholder' }]
+    }
+
     return materials.map((material) => ({
         code: material.code,
     }))

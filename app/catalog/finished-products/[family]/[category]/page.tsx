@@ -6,6 +6,11 @@ export const dynamicParams = false
 
 export async function generateStaticParams() {
     const families = getFinishedProductFamilies()
+
+    if (!families || families.length === 0) {
+        return [{ family: 'placeholder', category: 'placeholder' }]
+    }
+
     const paths: { family: string; category: string }[] = []
 
     families.forEach((family) => {

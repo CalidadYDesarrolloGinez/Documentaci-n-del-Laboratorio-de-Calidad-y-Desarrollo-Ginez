@@ -15,6 +15,10 @@ export async function generateStaticParams() {
     const families = getFinishedProductFamilies()
     const paths: { family: string; category: string; sku: string }[] = []
 
+    if (!families || families.length === 0) {
+        return [{ family: 'placeholder', category: 'placeholder', sku: 'placeholder' }]
+    }
+
     families.forEach((family) => {
         family.categories.forEach((category) => {
             category.products.forEach((product) => {
