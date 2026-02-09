@@ -2,6 +2,7 @@ import { DEFAULT_FAMILIES, getFamilyBySlug, getFinishedProductFamilies } from '@
 import FamilyCategoriesContent from './FamilyCategoriesContent'
 
 export const dynamic = 'force-static'
+export const dynamicParams = false
 
 export async function generateStaticParams() {
     return DEFAULT_FAMILIES.map((family) => ({

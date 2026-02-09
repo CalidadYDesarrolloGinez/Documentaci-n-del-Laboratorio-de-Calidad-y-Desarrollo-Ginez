@@ -8,6 +8,9 @@ import { getProductBySku, getFinishedProductFamilies } from '@/lib/data'
 import { unslugify } from '@/lib/utils'
 import type { FinishedProduct } from '@/lib/types'
 
+export const dynamic = 'force-static'
+export const dynamicParams = false
+
 export async function generateStaticParams() {
     const families = getFinishedProductFamilies()
     const paths: { family: string; category: string; sku: string }[] = []

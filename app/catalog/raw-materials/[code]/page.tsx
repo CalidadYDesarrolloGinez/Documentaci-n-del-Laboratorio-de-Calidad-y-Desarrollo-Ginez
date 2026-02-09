@@ -7,6 +7,9 @@ import { Card, CardContent } from '@/components/ui/card'
 import { getRawMaterials, getRawMaterialByCode } from '@/lib/data'
 import type { RawMaterial } from '@/lib/types'
 
+export const dynamic = 'force-static'
+export const dynamicParams = false
+
 // Generate static paths for all raw materials
 export async function generateStaticParams() {
     const materials = getRawMaterials()
