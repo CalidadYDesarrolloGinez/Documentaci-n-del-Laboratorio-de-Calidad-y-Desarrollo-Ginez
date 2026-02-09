@@ -12,7 +12,7 @@ import { DataTable } from '@/components/DataTable'
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
 import { getRawMaterials, getUniqueValues } from '@/lib/data'
-import { getBasePath } from '@/lib/utils'
+import { getBasePath, resolvePath } from '@/lib/utils'
 import type { RawMaterial } from '@/lib/types'
 
 const columns: ColumnDef<RawMaterial>[] = [

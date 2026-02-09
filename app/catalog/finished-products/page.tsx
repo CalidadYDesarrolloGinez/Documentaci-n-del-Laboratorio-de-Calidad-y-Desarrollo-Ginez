@@ -3,7 +3,7 @@ import { Box, Home, WashingMachine, Car, Shield, User } from 'lucide-react'
 import { Breadcrumbs } from '@/components/Breadcrumbs'
 import { Card, CardContent } from '@/components/ui/card'
 import { getFinishedProductFamilies } from '@/lib/data'
-import { getBasePath } from '@/lib/utils'
+import { getBasePath, resolvePath } from '@/lib/utils'
 import { CascadingProductFilter } from '@/components/CascadingProductFilter'
 
 const familyIcons: Record<string, React.ReactNode> = {

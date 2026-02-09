@@ -5,7 +5,7 @@ import { Search, X, ChevronRight, Package } from 'lucide-react'
 import Link from 'next/link'
 import { Input } from '@/components/ui/input'
 import { FinishedProduct } from '@/lib/types'
-import { getBasePath } from '@/lib/utils'
+import { getBasePath, resolvePath } from '@/lib/utils'
 import Fuse from 'fuse.js'
 
 interface ProductQuickSearchProps {

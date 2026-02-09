@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react'
 import { Filter, ChevronRight, Sparkles, ArrowRight, X, Package, Search } from 'lucide-react'
 import { useRouter } from 'next/navigation'
 import { ProductFamily, ProductCategory, FinishedProduct } from '@/lib/types'
-import { getBasePath } from '@/lib/utils'
+import { getBasePath, resolvePath } from '@/lib/utils'
 import { Button } from '@/components/ui/button'
 import {
     Popover,

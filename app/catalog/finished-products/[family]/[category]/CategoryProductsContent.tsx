@@ -10,7 +10,7 @@ import { SearchInput } from '@/components/SearchInput'
 import { DataTable } from '@/components/DataTable'
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
-import { getBasePath, unslugify } from '@/lib/utils'
+import { getBasePath, unslugify, resolvePath } from '@/lib/utils'
 import type { FinishedProduct, ProductCategory } from '@/lib/types'
 
 const columns: ColumnDef<FinishedProduct>[] = [

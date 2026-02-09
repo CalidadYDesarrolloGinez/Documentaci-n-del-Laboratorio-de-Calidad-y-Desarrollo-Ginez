@@ -5,7 +5,7 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: process.env.NEXT_PUBLIC_BASE_PATH || '',
+  basePath: '/Documentaci-n-del-Laboratorio-de-Calidad-y-Desarrollo-Ginez',
 }
 
 module.exports = nextConfig

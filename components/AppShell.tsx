@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { getBasePath } from '@/lib/utils'
+import { getBasePath, resolvePath } from '@/lib/utils'
 
 interface AppShellProps {
     children: React.ReactNode
@@ -20,7 +20,7 @@ export function AppShell({ children }: AppShellProps) {
                             <a className="flex items-center gap-3">
                                 <div className="flex items-center">
                                     <img
-                                        src={`${basePath}/logo.png`}
+                                        src={resolvePath('/logo.png')}
                                         alt="GINEZ Logo"
                                         className="h-10 w-auto brightness-0 invert"
                                     />

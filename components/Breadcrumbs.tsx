@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 import { ChevronRight, Home } from 'lucide-react'
-import { getBasePath } from '@/lib/utils'
+import { getBasePath, resolvePath } from '@/lib/utils'
 
 export interface BreadcrumbItem {
     label: string

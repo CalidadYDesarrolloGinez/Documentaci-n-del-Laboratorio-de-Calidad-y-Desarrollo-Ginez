@@ -5,8 +5,23 @@ export function cn(...inputs: ClassValue[]) {
     return twMerge(clsx(inputs))
 }
 
+import { REPO_NAME } from "./constants"
+
 export function getBasePath(): string {
-    return process.env.NEXT_PUBLIC_BASE_PATH || ''
+    return REPO_NAME
+}
+
+export function resolvePath(path: string): string {
+    const base = getBasePath()
+    if (path.startsWith('http')) return path
+
+    // Ensure path starts with /
+    const normalizedPath = path.startsWith('/') ? path : `/${path}`
+
+    // In GitHub Pages with basePath in next.config.js, 
+    // Link components handle basePath automatically.
+    // This function is mainly for standard HTML tags (img, a, etc.)
+    return `${base}${normalizedPath}`.replace(/\/+/g, '/')
 }
 
 export function getDriveViewUrl(fileId: string | null | undefined): string | null {

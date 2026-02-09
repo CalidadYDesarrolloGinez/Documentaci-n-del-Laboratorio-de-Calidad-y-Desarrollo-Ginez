@@ -11,7 +11,7 @@ import { DataTable } from '@/components/DataTable'
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
 import { SearchInput } from '@/components/SearchInput'
-import { getBasePath, unslugify } from '@/lib/utils'
+import { getBasePath, unslugify, resolvePath } from '@/lib/utils'
 import type { FinishedProduct, ProductFamily, ProductCategory } from '@/lib/types'
 import { ColumnDef } from '@tanstack/react-table'
 

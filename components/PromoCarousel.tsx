@@ -2,7 +2,7 @@
 
 import * as React from "react"
 import Autoplay from "embla-carousel-autoplay"
-import { getBasePath } from "@/lib/utils"
+import { getBasePath, resolvePath } from "@/lib/utils"
 import {
     Carousel,
     CarouselContent,
@@ -53,7 +53,7 @@ export function PromoCarousel() {
                         <CarouselItem key={index} className="pl-2 md:pl-4">
                             <div className="relative w-full aspect-[24/7] overflow-hidden rounded-2xl border border-border/40 shadow-xl bg-muted">
                                 <img
-                                    src={`${basePath}${image.src}`}
+                                    src={resolvePath(image.src)}
                                     alt={image.alt}
                                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.02]"
                                     loading={index === 0 ? "eager" : "lazy"}

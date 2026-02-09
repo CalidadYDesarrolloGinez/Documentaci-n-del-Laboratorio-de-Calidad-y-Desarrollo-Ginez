@@ -16,7 +16,7 @@ import {
     Book,
     LucideIcon
 } from 'lucide-react'
-import { getBasePath } from '@/lib/utils'
+import { getBasePath, resolvePath } from '@/lib/utils'
 
 const iconMap: Record<string, LucideIcon> = {
     package: Package,
