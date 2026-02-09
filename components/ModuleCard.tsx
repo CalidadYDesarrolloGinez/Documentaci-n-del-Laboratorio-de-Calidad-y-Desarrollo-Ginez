@@ -109,8 +109,10 @@ export function ModuleCard({
     }
 
     return (
-        <Link href={href}>
-            {cardContent}
+        <Link href={href} legacyBehavior>
+            <a className="block h-full">
+                {cardContent}
+            </a>
         </Link>
     )
 }
