@@ -299,7 +299,7 @@ export function getRawMaterialsCount(): number {
 }
 
 export function getFinishedProductFamilies(): ProductFamily[] {
-    const dataFamilies = (finishedProductsData as FinishedProductsData).families || []
+    const dataFamilies = (finishedProductsData as unknown as FinishedProductsData).families || []
 
     return DEFAULT_FAMILIES.map(df => {
         const dataFamily = dataFamilies.find(f => f.slug === df.slug)

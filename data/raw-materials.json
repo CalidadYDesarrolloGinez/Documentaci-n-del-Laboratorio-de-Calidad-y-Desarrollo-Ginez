@@ -69,17 +69,7 @@
       "sds_file_id": "",
       "coa_cedis_file_id": "",
       "coa_branches_file_id": "",
-      "label_file_id": "",
-      "tds_view_url": null,
-      "tds_download_url": null,
-      "sds_view_url": null,
-      "sds_download_url": null,
-      "coa_cedis_view_url": null,
-      "coa_cedis_download_url": null,
-      "coa_branches_view_url": null,
-      "coa_branches_download_url": null,
-      "label_view_url": null,
-      "label_download_url": null
+      "label_file_id": ""
     },
     {
       "code": "MP-CH-004",
@@ -96,17 +86,7 @@
       "sds_file_id": "",
       "coa_cedis_file_id": "",
       "coa_branches_file_id": "",
-      "label_file_id": "",
-      "tds_view_url": null,
-      "tds_download_url": null,
-      "sds_view_url": null,
-      "sds_download_url": null,
-      "coa_cedis_view_url": null,
-      "coa_cedis_download_url": null,
-      "coa_branches_view_url": null,
-      "coa_branches_download_url": null,
-      "label_view_url": null,
-      "label_download_url": null
+      "label_file_id": ""
     },
     {
       "code": "MP-CH-005",
@@ -123,17 +103,7 @@
       "sds_file_id": "",
       "coa_cedis_file_id": "",
       "coa_branches_file_id": "",
-      "label_file_id": "",
-      "tds_view_url": null,
-      "tds_download_url": null,
-      "sds_view_url": null,
-      "sds_download_url": null,
-      "coa_cedis_view_url": null,
-      "coa_cedis_download_url": null,
-      "coa_branches_view_url": null,
-      "coa_branches_download_url": null,
-      "label_view_url": null,
-      "label_download_url": null
+      "label_file_id": ""
     },
     {
       "code": "MP-CH-006",
@@ -150,17 +120,7 @@
       "sds_file_id": "",
       "coa_cedis_file_id": "",
       "coa_branches_file_id": "",
-      "label_file_id": "",
-      "tds_view_url": null,
-      "tds_download_url": null,
-      "sds_view_url": null,
-      "sds_download_url": null,
-      "coa_cedis_view_url": null,
-      "coa_cedis_download_url": null,
-      "coa_branches_view_url": null,
-      "coa_branches_download_url": null,
-      "label_view_url": null,
-      "label_download_url": null
+      "label_file_id": ""
     },
     {
       "code": "MP-CH-007",
@@ -177,17 +137,7 @@
       "sds_file_id": "",
       "coa_cedis_file_id": "",
       "coa_branches_file_id": "",
-      "label_file_id": "",
-      "tds_view_url": null,
-      "tds_download_url": null,
-      "sds_view_url": null,
-      "sds_download_url": null,
-      "coa_cedis_view_url": null,
-      "coa_cedis_download_url": null,
-      "coa_branches_view_url": null,
-      "coa_branches_download_url": null,
-      "label_view_url": null,
-      "label_download_url": null
+      "label_file_id": ""
     },
     {
       "code": "MP-CH-008",
@@ -204,17 +154,7 @@
       "sds_file_id": "",
       "coa_cedis_file_id": "",
       "coa_branches_file_id": "",
-      "label_file_id": "",
-      "tds_view_url": null,
-      "tds_download_url": null,
-      "sds_view_url": null,
-      "sds_download_url": null,
-      "coa_cedis_view_url": null,
-      "coa_cedis_download_url": null,
-      "coa_branches_view_url": null,
-      "coa_branches_download_url": null,
-      "label_view_url": null,
-      "label_download_url": null
+      "label_file_id": ""
     },
     {
       "code": "MP-CH-009",
@@ -231,17 +171,7 @@
       "sds_file_id": "",
       "coa_cedis_file_id": "",
       "coa_branches_file_id": "",
-      "label_file_id": "",
-      "tds_view_url": null,
-      "tds_download_url": null,
-      "sds_view_url": null,
-      "sds_download_url": null,
-      "coa_cedis_view_url": null,
-      "coa_cedis_download_url": null,
-      "coa_branches_view_url": null,
-      "coa_branches_download_url": null,
-      "label_view_url": null,
-      "label_download_url": null
+      "label_file_id": ""
     },
     {
       "code": "MP-CH-010",
@@ -258,17 +188,7 @@
       "sds_file_id": "",
       "coa_cedis_file_id": "",
       "coa_branches_file_id": "",
-      "label_file_id": "",
-      "tds_view_url": null,
-      "tds_download_url": null,
-      "sds_view_url": null,
-      "sds_download_url": null,
-      "coa_cedis_view_url": null,
-      "coa_cedis_download_url": null,
-      "coa_branches_view_url": null,
-      "coa_branches_download_url": null,
-      "label_view_url": null,
-      "label_download_url": null
+      "label_file_id": ""
     },
     {
       "code": "MP-CH-011",
@@ -285,17 +205,7 @@
       "sds_file_id": "",
       "coa_cedis_file_id": "",
       "coa_branches_file_id": "",
-      "label_file_id": "",
-      "tds_view_url": null,
-      "tds_download_url": null,
-      "sds_view_url": null,
-      "sds_download_url": null,
-      "coa_cedis_view_url": null,
-      "coa_cedis_download_url": null,
-      "coa_branches_view_url": null,
-      "coa_branches_download_url": null,
-      "label_view_url": null,
-      "label_download_url": null
+      "label_file_id": ""
     },
     {
       "code": "MP-CH-012",
@@ -312,17 +222,7 @@
       "sds_file_id": "",
       "coa_cedis_file_id": "",
       "coa_branches_file_id": "",
-      "label_file_id": "",
-      "tds_view_url": null,
-      "tds_download_url": null,
-      "sds_view_url": null,
-      "sds_download_url": null,
-      "coa_cedis_view_url": null,
-      "coa_cedis_download_url": null,
-      "coa_branches_view_url": null,
-      "coa_branches_download_url": null,
-      "label_view_url": null,
-      "label_download_url": null
+      "label_file_id": ""
     },
     {
       "code": "MP-CH-013",
@@ -339,17 +239,7 @@
       "sds_file_id": "",
       "coa_cedis_file_id": "",
       "coa_branches_file_id": "",
-      "label_file_id": "",
-      "tds_view_url": null,
-      "tds_download_url": null,
-      "sds_view_url": null,
-      "sds_download_url": null,
-      "coa_cedis_view_url": null,
-      "coa_cedis_download_url": null,
-      "coa_branches_view_url": null,
-      "coa_branches_download_url": null,
-      "label_view_url": null,
-      "label_download_url": null
+      "label_file_id": ""
     },
     {
       "code": "MP-CH-014",
@@ -366,17 +256,7 @@
       "sds_file_id": "",
       "coa_cedis_file_id": "",
       "coa_branches_file_id": "",
-      "label_file_id": "",
-      "tds_view_url": null,
-      "tds_download_url": null,
-      "sds_view_url": null,
-      "sds_download_url": null,
-      "coa_cedis_view_url": null,
-      "coa_cedis_download_url": null,
-      "coa_branches_view_url": null,
-      "coa_branches_download_url": null,
-      "label_view_url": null,
-      "label_download_url": null
+      "label_file_id": ""
     },
     {
       "code": "MP-CH-015",
@@ -393,17 +273,7 @@
       "sds_file_id": "",
       "coa_cedis_file_id": "",
       "coa_branches_file_id": "",
-      "label_file_id": "",
-      "tds_view_url": null,
-      "tds_download_url": null,
-      "sds_view_url": null,
-      "sds_download_url": null,
-      "coa_cedis_view_url": null,
-      "coa_cedis_download_url": null,
-      "coa_branches_view_url": null,
-      "coa_branches_download_url": null,
-      "label_view_url": null,
-      "label_download_url": null
+      "label_file_id": ""
     },
     {
       "code": "MP-CH-016",
@@ -420,17 +290,7 @@
       "sds_file_id": "",
       "coa_cedis_file_id": "",
       "coa_branches_file_id": "",
-      "label_file_id": "",
-      "tds_view_url": null,
-      "tds_download_url": null,
-      "sds_view_url": null,
-      "sds_download_url": null,
-      "coa_cedis_view_url": null,
-      "coa_cedis_download_url": null,
-      "coa_branches_view_url": null,
-      "coa_branches_download_url": null,
-      "label_view_url": null,
-      "label_download_url": null
+      "label_file_id": ""
     },
     {
       "code": "MP-CH-017",
@@ -447,17 +307,7 @@
       "sds_file_id": "",
       "coa_cedis_file_id": "",
       "coa_branches_file_id": "",
-      "label_file_id": "",
-      "tds_view_url": null,
-      "tds_download_url": null,
-      "sds_view_url": null,
-      "sds_download_url": null,
-      "coa_cedis_view_url": null,
-      "coa_cedis_download_url": null,
-      "coa_branches_view_url": null,
-      "coa_branches_download_url": null,
-      "label_view_url": null,
-      "label_download_url": null
+      "label_file_id": ""
     },
     {
       "code": "MP-CH-018",
@@ -474,17 +324,7 @@
       "sds_file_id": "",
       "coa_cedis_file_id": "",
       "coa_branches_file_id": "",
-      "label_file_id": "",
-      "tds_view_url": null,
-      "tds_download_url": null,
-      "sds_view_url": null,
-      "sds_download_url": null,
-      "coa_cedis_view_url": null,
-      "coa_cedis_download_url": null,
-      "coa_branches_view_url": null,
-      "coa_branches_download_url": null,
-      "label_view_url": null,
-      "label_download_url": null
+      "label_file_id": ""
     },
     {
       "code": "MP-CH-019",
@@ -501,17 +341,7 @@
       "sds_file_id": "",
       "coa_cedis_file_id": "",
       "coa_branches_file_id": "",
-      "label_file_id": "",
-      "tds_view_url": null,
-      "tds_download_url": null,
-      "sds_view_url": null,
-      "sds_download_url": null,
-      "coa_cedis_view_url": null,
-      "coa_cedis_download_url": null,
-      "coa_branches_view_url": null,
-      "coa_branches_download_url": null,
-      "label_view_url": null,
-      "label_download_url": null
+      "label_file_id": ""
     },
     {
       "code": "MP-CH-020",
@@ -528,17 +358,7 @@
       "sds_file_id": "",
       "coa_cedis_file_id": "",
       "coa_branches_file_id": "",
-      "label_file_id": "",
-      "tds_view_url": null,
-      "tds_download_url": null,
-      "sds_view_url": null,
-      "sds_download_url": null,
-      "coa_cedis_view_url": null,
-      "coa_cedis_download_url": null,
-      "coa_branches_view_url": null,
-      "coa_branches_download_url": null,
-      "label_view_url": null,
-      "label_download_url": null
+      "label_file_id": ""
     },
     {
       "code": "MP-CH-021",
@@ -555,17 +375,7 @@
       "sds_file_id": "",
       "coa_cedis_file_id": "",
       "coa_branches_file_id": "",
-      "label_file_id": "",
-      "tds_view_url": null,
-      "tds_download_url": null,
-      "sds_view_url": null,
-      "sds_download_url": null,
-      "coa_cedis_view_url": null,
-      "coa_cedis_download_url": null,
-      "coa_branches_view_url": null,
-      "coa_branches_download_url": null,
-      "label_view_url": null,
-      "label_download_url": null
+      "label_file_id": ""
     },
     {
       "code": "MP-CH-022",
@@ -582,17 +392,7 @@
       "sds_file_id": "",
       "coa_cedis_file_id": "",
       "coa_branches_file_id": "",
-      "label_file_id": "",
-      "tds_view_url": null,
-      "tds_download_url": null,
-      "sds_view_url": null,
-      "sds_download_url": null,
-      "coa_cedis_view_url": null,
-      "coa_cedis_download_url": null,
-      "coa_branches_view_url": null,
-      "coa_branches_download_url": null,
-      "label_view_url": null,
-      "label_download_url": null
+      "label_file_id": ""
     },
     {
       "code": "MP-CH-023",
@@ -609,17 +409,7 @@
       "sds_file_id": "",
       "coa_cedis_file_id": "",
       "coa_branches_file_id": "",
-      "label_file_id": "",
-      "tds_view_url": null,
-      "tds_download_url": null,
-      "sds_view_url": null,
-      "sds_download_url": null,
-      "coa_cedis_view_url": null,
-      "coa_cedis_download_url": null,
-      "coa_branches_view_url": null,
-      "coa_branches_download_url": null,
-      "label_view_url": null,
-      "label_download_url": null
+      "label_file_id": ""
     },
     {
       "code": "MP-CH-024",
@@ -636,17 +426,7 @@
       "sds_file_id": "",
       "coa_cedis_file_id": "",
       "coa_branches_file_id": "",
-      "label_file_id": "",
-      "tds_view_url": null,
-      "tds_download_url": null,
-      "sds_view_url": null,
-      "sds_download_url": null,
-      "coa_cedis_view_url": null,
-      "coa_cedis_download_url": null,
-      "coa_branches_view_url": null,
-      "coa_branches_download_url": null,
-      "label_view_url": null,
-      "label_download_url": null
+      "label_file_id": ""
     },
     {
       "code": "MP-CH-025",
@@ -663,17 +443,7 @@
       "sds_file_id": "",
       "coa_cedis_file_id": "",
       "coa_branches_file_id": "",
-      "label_file_id": "",
-      "tds_view_url": null,
-      "tds_download_url": null,
-      "sds_view_url": null,
-      "sds_download_url": null,
-      "coa_cedis_view_url": null,
-      "coa_cedis_download_url": null,
-      "coa_branches_view_url": null,
-      "coa_branches_download_url": null,
-      "label_view_url": null,
-      "label_download_url": null
+      "label_file_id": ""
     },
     {
       "code": "MP-CH-026",
@@ -690,17 +460,7 @@
       "sds_file_id": "",
       "coa_cedis_file_id": "",
       "coa_branches_file_id": "",
-      "label_file_id": "",
-      "tds_view_url": null,
-      "tds_download_url": null,
-      "sds_view_url": null,
-      "sds_download_url": null,
-      "coa_cedis_view_url": null,
-      "coa_cedis_download_url": null,
-      "coa_branches_view_url": null,
-      "coa_branches_download_url": null,
-      "label_view_url": null,
-      "label_download_url": null
+      "label_file_id": ""
     },
     {
       "code": "MP-CH-027",
@@ -717,17 +477,7 @@
       "sds_file_id": "",
       "coa_cedis_file_id": "",
       "coa_branches_file_id": "",
-      "label_file_id": "",
-      "tds_view_url": null,
-      "tds_download_url": null,
-      "sds_view_url": null,
-      "sds_download_url": null,
-      "coa_cedis_view_url": null,
-      "coa_cedis_download_url": null,
-      "coa_branches_view_url": null,
-      "coa_branches_download_url": null,
-      "label_view_url": null,
-      "label_download_url": null
+      "label_file_id": ""
     },
     {
       "code": "MP-CH-028",
@@ -744,17 +494,7 @@
       "sds_file_id": "",
       "coa_cedis_file_id": "",
       "coa_branches_file_id": "",
-      "label_file_id": "",
-      "tds_view_url": null,
-      "tds_download_url": null,
-      "sds_view_url": null,
-      "sds_download_url": null,
-      "coa_cedis_view_url": null,
-      "coa_cedis_download_url": null,
-      "coa_branches_view_url": null,
-      "coa_branches_download_url": null,
-      "label_view_url": null,
-      "label_download_url": null
+      "label_file_id": ""
     },
     {
       "code": "MP-CH-029",
@@ -771,17 +511,7 @@
       "sds_file_id": "",
       "coa_cedis_file_id": "",
       "coa_branches_file_id": "",
-      "label_file_id": "",
-      "tds_view_url": null,
-      "tds_download_url": null,
-      "sds_view_url": null,
-      "sds_download_url": null,
-      "coa_cedis_view_url": null,
-      "coa_cedis_download_url": null,
-      "coa_branches_view_url": null,
-      "coa_branches_download_url": null,
-      "label_view_url": null,
-      "label_download_url": null
+      "label_file_id": ""
     },
     {
       "code": "MP-CH-030",
@@ -798,17 +528,7 @@
       "sds_file_id": "",
       "coa_cedis_file_id": "",
       "coa_branches_file_id": "",
-      "label_file_id": "",
-      "tds_view_url": null,
-      "tds_download_url": null,
-      "sds_view_url": null,
-      "sds_download_url": null,
-      "coa_cedis_view_url": null,
-      "coa_cedis_download_url": null,
-      "coa_branches_view_url": null,
-      "coa_branches_download_url": null,
-      "label_view_url": null,
-      "label_download_url": null
+      "label_file_id": ""
     },
     {
       "code": "MP-CH-031",
@@ -825,17 +545,7 @@
       "sds_file_id": "",
       "coa_cedis_file_id": "",
       "coa_branches_file_id": "",
-      "label_file_id": "",
-      "tds_view_url": null,
-      "tds_download_url": null,
-      "sds_view_url": null,
-      "sds_download_url": null,
-      "coa_cedis_view_url": null,
-      "coa_cedis_download_url": null,
-      "coa_branches_view_url": null,
-      "coa_branches_download_url": null,
-      "label_view_url": null,
-      "label_download_url": null
+      "label_file_id": ""
     },
     {
       "code": "MP-CH-032",
@@ -879,17 +589,7 @@
       "sds_file_id": "",
       "coa_cedis_file_id": "",
       "coa_branches_file_id": "",
-      "label_file_id": "",
-      "tds_view_url": null,
-      "tds_download_url": null,
-      "sds_view_url": null,
-      "sds_download_url": null,
-      "coa_cedis_view_url": null,
-      "coa_cedis_download_url": null,
-      "coa_branches_view_url": null,
-      "coa_branches_download_url": null,
-      "label_view_url": null,
-      "label_download_url": null
+      "label_file_id": ""
     },
     {
       "code": "MP-CH-034",
@@ -906,17 +606,7 @@
       "sds_file_id": "",
       "coa_cedis_file_id": "",
       "coa_branches_file_id": "",
-      "label_file_id": "",
-      "tds_view_url": null,
-      "tds_download_url": null,
-      "sds_view_url": null,
-      "sds_download_url": null,
-      "coa_cedis_view_url": null,
-      "coa_cedis_download_url": null,
-      "coa_branches_view_url": null,
-      "coa_branches_download_url": null,
-      "label_view_url": null,
-      "label_download_url": null
+      "label_file_id": ""
     },
     {
       "code": "MP-CH-035",
@@ -933,17 +623,7 @@
       "sds_file_id": "",
       "coa_cedis_file_id": "",
       "coa_branches_file_id": "",
-      "label_file_id": "",
-      "tds_view_url": null,
-      "tds_download_url": null,
-      "sds_view_url": null,
-      "sds_download_url": null,
-      "coa_cedis_view_url": null,
-      "coa_cedis_download_url": null,
-      "coa_branches_view_url": null,
-      "coa_branches_download_url": null,
-      "label_view_url": null,
-      "label_download_url": null
+      "label_file_id": ""
     },
     {
       "code": "MP-CH-036",
@@ -960,17 +640,7 @@
       "sds_file_id": "",
       "coa_cedis_file_id": "",
       "coa_branches_file_id": "",
-      "label_file_id": "",
-      "tds_view_url": null,
-      "tds_download_url": null,
-      "sds_view_url": null,
-      "sds_download_url": null,
-      "coa_cedis_view_url": null,
-      "coa_cedis_download_url": null,
-      "coa_branches_view_url": null,
-      "coa_branches_download_url": null,
-      "label_view_url": null,
-      "label_download_url": null
+      "label_file_id": ""
     },
     {
       "code": "MP-CH-037",
@@ -987,17 +657,7 @@
       "sds_file_id": "",
       "coa_cedis_file_id": "",
       "coa_branches_file_id": "",
-      "label_file_id": "",
-      "tds_view_url": null,
-      "tds_download_url": null,
-      "sds_view_url": null,
-      "sds_download_url": null,
-      "coa_cedis_view_url": null,
-      "coa_cedis_download_url": null,
-      "coa_branches_view_url": null,
-      "coa_branches_download_url": null,
-      "label_view_url": null,
-      "label_download_url": null
+      "label_file_id": ""
     },
     {
       "code": "MP-CH-038",
@@ -1014,17 +674,7 @@
       "sds_file_id": "",
       "coa_cedis_file_id": "",
       "coa_branches_file_id": "",
-      "label_file_id": "",
-      "tds_view_url": null,
-      "tds_download_url": null,
-      "sds_view_url": null,
-      "sds_download_url": null,
-      "coa_cedis_view_url": null,
-      "coa_cedis_download_url": null,
-      "coa_branches_view_url": null,
-      "coa_branches_download_url": null,
-      "label_view_url": null,
-      "label_download_url": null
+      "label_file_id": ""
     },
     {
       "code": "MP-CH-039",
@@ -1041,17 +691,7 @@
       "sds_file_id": "",
       "coa_cedis_file_id": "",
       "coa_branches_file_id": "",
-      "label_file_id": "",
-      "tds_view_url": null,
-      "tds_download_url": null,
-      "sds_view_url": null,
-      "sds_download_url": null,
-      "coa_cedis_view_url": null,
-      "coa_cedis_download_url": null,
-      "coa_branches_view_url": null,
-      "coa_branches_download_url": null,
-      "label_view_url": null,
-      "label_download_url": null
+      "label_file_id": ""
     },
     {
       "code": "MP-CH-040",
@@ -1068,17 +708,7 @@
       "sds_file_id": "",
       "coa_cedis_file_id": "",
       "coa_branches_file_id": "",
-      "label_file_id": "",
-      "tds_view_url": null,
-      "tds_download_url": null,
-      "sds_view_url": null,
-      "sds_download_url": null,
-      "coa_cedis_view_url": null,
-      "coa_cedis_download_url": null,
-      "coa_branches_view_url": null,
-      "coa_branches_download_url": null,
-      "label_view_url": null,
-      "label_download_url": null
+      "label_file_id": ""
     },
     {
       "code": "MP-CH-041",
@@ -1095,17 +725,7 @@
       "sds_file_id": "",
       "coa_cedis_file_id": "",
       "coa_branches_file_id": "",
-      "label_file_id": "",
-      "tds_view_url": null,
-      "tds_download_url": null,
-      "sds_view_url": null,
-      "sds_download_url": null,
-      "coa_cedis_view_url": null,
-      "coa_cedis_download_url": null,
-      "coa_branches_view_url": null,
-      "coa_branches_download_url": null,
-      "label_view_url": null,
-      "label_download_url": null
+      "label_file_id": ""
     },
     {
       "code": "MP-CH-042",
@@ -1122,17 +742,7 @@
       "sds_file_id": "",
       "coa_cedis_file_id": "",
       "coa_branches_file_id": "",
-      "label_file_id": "",
-      "tds_view_url": null,
-      "tds_download_url": null,
-      "sds_view_url": null,
-      "sds_download_url": null,
-      "coa_cedis_view_url": null,
-      "coa_cedis_download_url": null,
-      "coa_branches_view_url": null,
-      "coa_branches_download_url": null,
-      "label_view_url": null,
-      "label_download_url": null
+      "label_file_id": ""
     },
     {
       "code": "MP-CH-043",
@@ -1149,17 +759,7 @@
       "sds_file_id": "",
       "coa_cedis_file_id": "",
       "coa_branches_file_id": "",
-      "label_file_id": "",
-      "tds_view_url": null,
-      "tds_download_url": null,
-      "sds_view_url": null,
-      "sds_download_url": null,
-      "coa_cedis_view_url": null,
-      "coa_cedis_download_url": null,
-      "coa_branches_view_url": null,
-      "coa_branches_download_url": null,
-      "label_view_url": null,
-      "label_download_url": null
+      "label_file_id": ""
     },
     {
       "code": "MP-CH-044",
@@ -1176,17 +776,7 @@
       "sds_file_id": "",
       "coa_cedis_file_id": "",
       "coa_branches_file_id": "",
-      "label_file_id": "",
-      "tds_view_url": null,
-      "tds_download_url": null,
-      "sds_view_url": null,
-      "sds_download_url": null,
-      "coa_cedis_view_url": null,
-      "coa_cedis_download_url": null,
-      "coa_branches_view_url": null,
-      "coa_branches_download_url": null,
-      "label_view_url": null,
-      "label_download_url": null
+      "label_file_id": ""
     },
     {
       "code": "MP-CH-045",
@@ -1203,17 +793,7 @@
       "sds_file_id": "",
       "coa_cedis_file_id": "",
       "coa_branches_file_id": "",
-      "label_file_id": "",
-      "tds_view_url": null,
-      "tds_download_url": null,
-      "sds_view_url": null,
-      "sds_download_url": null,
-      "coa_cedis_view_url": null,
-      "coa_cedis_download_url": null,
-      "coa_branches_view_url": null,
-      "coa_branches_download_url": null,
-      "label_view_url": null,
-      "label_download_url": null
+      "label_file_id": ""
     },
     {
       "code": "MP-CH-046",
@@ -1230,17 +810,7 @@
       "sds_file_id": "",
       "coa_cedis_file_id": "",
       "coa_branches_file_id": "",
-      "label_file_id": "",
-      "tds_view_url": null,
-      "tds_download_url": null,
-      "sds_view_url": null,
-      "sds_download_url": null,
-      "coa_cedis_view_url": null,
-      "coa_cedis_download_url": null,
-      "coa_branches_view_url": null,
-      "coa_branches_download_url": null,
-      "label_view_url": null,
-      "label_download_url": null
+      "label_file_id": ""
     },
     {
       "code": "MP-CH-047",
@@ -1257,17 +827,7 @@
       "sds_file_id": "",
       "coa_cedis_file_id": "",
       "coa_branches_file_id": "",
-      "label_file_id": "",
-      "tds_view_url": null,
-      "tds_download_url": null,
-      "sds_view_url": null,
-      "sds_download_url": null,
-      "coa_cedis_view_url": null,
-      "coa_cedis_download_url": null,
-      "coa_branches_view_url": null,
-      "coa_branches_download_url": null,
-      "label_view_url": null,
-      "label_download_url": null
+      "label_file_id": ""
     },
     {
       "code": "MP-CH-048",
@@ -1284,17 +844,7 @@
       "sds_file_id": "",
       "coa_cedis_file_id": "",
       "coa_branches_file_id": "",
-      "label_file_id": "",
-      "tds_view_url": null,
-      "tds_download_url": null,
-      "sds_view_url": null,
-      "sds_download_url": null,
-      "coa_cedis_view_url": null,
-      "coa_cedis_download_url": null,
-      "coa_branches_view_url": null,
-      "coa_branches_download_url": null,
-      "label_view_url": null,
-      "label_download_url": null
+      "label_file_id": ""
     },
     {
       "code": "MP-CH-049",
@@ -1311,17 +861,7 @@
       "sds_file_id": "",
       "coa_cedis_file_id": "",
       "coa_branches_file_id": "",
-      "label_file_id": "",
-      "tds_view_url": null,
-      "tds_download_url": null,
-      "sds_view_url": null,
-      "sds_download_url": null,
-      "coa_cedis_view_url": null,
-      "coa_cedis_download_url": null,
-      "coa_branches_view_url": null,
-      "coa_branches_download_url": null,
-      "label_view_url": null,
-      "label_download_url": null
+      "label_file_id": ""
     },
     {
       "code": "MP-CH-050",
@@ -1338,17 +878,7 @@
       "sds_file_id": "",
       "coa_cedis_file_id": "",
       "coa_branches_file_id": "",
-      "label_file_id": "",
-      "tds_view_url": null,
-      "tds_download_url": null,
-      "sds_view_url": null,
-      "sds_download_url": null,
-      "coa_cedis_view_url": null,
-      "coa_cedis_download_url": null,
-      "coa_branches_view_url": null,
-      "coa_branches_download_url": null,
-      "label_view_url": null,
-      "label_download_url": null
+      "label_file_id": ""
     },
     {
       "code": "MP-CH-051",
@@ -1365,17 +895,7 @@
       "sds_file_id": "",
       "coa_cedis_file_id": "",
       "coa_branches_file_id": "",
-      "label_file_id": "",
-      "tds_view_url": null,
-      "tds_download_url": null,
-      "sds_view_url": null,
-      "sds_download_url": null,
-      "coa_cedis_view_url": null,
-      "coa_cedis_download_url": null,
-      "coa_branches_view_url": null,
-      "coa_branches_download_url": null,
-      "label_view_url": null,
-      "label_download_url": null
+      "label_file_id": ""
     },
     {
       "code": "MP-CH-052",
@@ -1392,17 +912,7 @@
       "sds_file_id": "",
       "coa_cedis_file_id": "",
       "coa_branches_file_id": "",
-      "label_file_id": "",
-      "tds_view_url": null,
-      "tds_download_url": null,
-      "sds_view_url": null,
-      "sds_download_url": null,
-      "coa_cedis_view_url": null,
-      "coa_cedis_download_url": null,
-      "coa_branches_view_url": null,
-      "coa_branches_download_url": null,
-      "label_view_url": null,
-      "label_download_url": null
+      "label_file_id": ""
     },
     {
       "code": "MP-CH-053",
@@ -1419,17 +929,7 @@
       "sds_file_id": "",
       "coa_cedis_file_id": "",
       "coa_branches_file_id": "",
-      "label_file_id": "",
-      "tds_view_url": null,
-      "tds_download_url": null,
-      "sds_view_url": null,
-      "sds_download_url": null,
-      "coa_cedis_view_url": null,
-      "coa_cedis_download_url": null,
-      "coa_branches_view_url": null,
-      "coa_branches_download_url": null,
-      "label_view_url": null,
-      "label_download_url": null
+      "label_file_id": ""
     },
     {
       "code": "MP-CH-054",
@@ -1446,17 +946,7 @@
       "sds_file_id": "",
       "coa_cedis_file_id": "",
       "coa_branches_file_id": "",
-      "label_file_id": "",
-      "tds_view_url": null,
-      "tds_download_url": null,
-      "sds_view_url": null,
-      "sds_download_url": null,
-      "coa_cedis_view_url": null,
-      "coa_cedis_download_url": null,
-      "coa_branches_view_url": null,
-      "coa_branches_download_url": null,
-      "label_view_url": null,
-      "label_download_url": null
+      "label_file_id": ""
     },
     {
       "code": "MP-CH-055",
@@ -1473,17 +963,7 @@
       "sds_file_id": "",
       "coa_cedis_file_id": "",
       "coa_branches_file_id": "",
-      "label_file_id": "",
-      "tds_view_url": null,
-      "tds_download_url": null,
-      "sds_view_url": null,
-      "sds_download_url": null,
-      "coa_cedis_view_url": null,
-      "coa_cedis_download_url": null,
-      "coa_branches_view_url": null,
-      "coa_branches_download_url": null,
-      "label_view_url": null,
-      "label_download_url": null
+      "label_file_id": ""
     },
     {
       "code": "MP-CH-056",
@@ -1500,19 +980,9 @@
       "sds_file_id": "",
       "coa_cedis_file_id": "",
       "coa_branches_file_id": "",
-      "label_file_id": "",
-      "tds_view_url": null,
-      "tds_download_url": null,
-      "sds_view_url": null,
-      "sds_download_url": null,
-      "coa_cedis_view_url": null,
-      "coa_cedis_download_url": null,
-      "coa_branches_view_url": null,
-      "coa_branches_download_url": null,
-      "label_view_url": null,
-      "label_download_url": null
+      "label_file_id": ""
     }
   ],
   "count": 56,
-  "lastUpdated": "2026-02-20T17:14:46.266Z"
+  "lastUpdated": "2026-02-20T17:25:08.193Z"
 }

@@ -95,7 +95,7 @@ function extractDriveId(input) {
  */
 function getDriveViewUrl(input) {
     const fileId = extractDriveId(input);
-    if (!fileId) return null;
+    if (!fileId) return undefined;
     return `https://drive.google.com/file/d/${fileId}/view?usp=sharing`;
 }
 
@@ -104,7 +104,7 @@ function getDriveViewUrl(input) {
  */
 function getDriveDownloadUrl(input) {
     const fileId = extractDriveId(input);
-    if (!fileId) return null;
+    if (!fileId) return undefined;
     return `https://drive.google.com/uc?export=download&id=${fileId}`;
 }
 
