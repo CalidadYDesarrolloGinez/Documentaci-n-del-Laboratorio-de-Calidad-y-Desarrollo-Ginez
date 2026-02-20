@@ -20,7 +20,7 @@ const DATA_DIR = path.join(__dirname, '..', 'data');
 // CONFIGURATION
 // ============================================================================
 
-const SHEET_MP_CSV_URL = process.env.SHEET_MP_CSV_URL;
+const SHEET_MP_CSV_URL = process.env.SHEET_MP_CSV_URL || 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTFKJ54e57piNVk-IBmr3Ykl7-N4LN5QRwo7A83UmbAyF_oclIcQZSgc7QHid91hHb2N_SIi7lRcKZd/pub?gid=1344191871&single=true&output=csv';
 const SHEET_PT_CSV_URL = process.env.SHEET_PT_CSV_URL;
 
 // Required columns for MP
