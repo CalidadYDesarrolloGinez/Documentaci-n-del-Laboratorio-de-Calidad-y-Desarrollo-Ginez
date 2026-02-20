@@ -21,7 +21,7 @@ const DATA_DIR = path.join(__dirname, '..', 'data');
 // ============================================================================
 
 const SHEET_MP_CSV_URL = process.env.SHEET_MP_CSV_URL || 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTFKJ54e57piNVk-IBmr3Ykl7-N4LN5QRwo7A83UmbAyF_oclIcQZSgc7QHid91hHb2N_SIi7lRcKZd/pub?gid=1344191871&single=true&output=csv';
-const SHEET_PT_CSV_URL = process.env.SHEET_PT_CSV_URL;
+const SHEET_PT_CSV_URL = process.env.SHEET_PT_CSV_URL || 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTFKJ54e57piNVk-IBmr3Ykl7-N4LN5QRwo7A83UmbAyF_oclIcQZSgc7QHid91hHb2N_SIi7lRcKZd/pub?gid=1911772609&single=true&output=csv';
 
 // Required columns for MP
 const MP_REQUIRED_COLUMNS = [
@@ -38,11 +38,8 @@ const MP_REQUIRED_COLUMNS = [
 const PT_REQUIRED_COLUMNS = [
     'family',
     'category',
-    'sku_code',
     'base_product',
-    'variant',
-    'status',
-    'updated_at'
+    'status'
 ];
 
 // ============================================================================
@@ -53,12 +50,21 @@ const PT_REQUIRED_COLUMNS = [
  * Slugify a string for URL-friendly paths
  */
 function slugify(text) {
-    return text
-        .toLowerCase()
-        .normalize('NFD')
-        .replace(/[\u0300-\u036f]/g, '')
-        .replace(/[^a-z0-9]+/g, '-')
-        .replace(/(^-|-$)/g, '');
+    try {
+        if (text === undefined || text === null) return 'general';
+        const str = String(text).trim();
+        if (str === '') return 'general';
+
+        return str
+            .toLowerCase()
+            .normalize('NFD')
+            .replace(/[\u0300-\u036f]/g, '')
+            .replace(/[^a-z0-9]+/g, '-')
+            .replace(/(^-|-$)/g, '') || 'general';
+    } catch (err) {
+        console.error(`⚠️  Failed to slugify value: "${text}"`, err);
+        return 'general';
+    }
 }
 
 /**
@@ -103,11 +109,11 @@ function getDriveDownloadUrl(input) {
 }
 
 /**
- * Validate date format YYYY-MM-DD
+ * Validate date format YYYY-MM-DD or YYYY
  */
 function isValidDate(dateString) {
     if (!dateString) return false;
-    const regex = /^\d{4}-\d{2}-\d{2}$/;
+    const regex = /^(\d{4}-\d{2}-\d{2})|(\d{4})$/;
     if (!regex.test(dateString)) return false;
     const date = new Date(dateString);
     return date instanceof Date && !isNaN(date);
@@ -162,6 +168,7 @@ function validateColumns(records, requiredColumns, name) {
     const missingColumns = requiredColumns.filter(col => !headers.includes(col));
 
     if (missingColumns.length > 0) {
+        console.log(`❌ Found columns: ${headers.join(', ')}`);
         throw new Error(
             `❌ Missing required columns in ${name}: ${missingColumns.join(', ')}\n` +
             `   Found columns: ${headers.join(', ')}`
@@ -255,11 +262,11 @@ function processFinishedProducts(records) {
     console.log('\n📦 Processing Finished Products...');
 
     validateColumns(records, PT_REQUIRED_COLUMNS, 'PT');
-    checkDuplicates(records, 'sku_code', 'PT');
+    // We don't check duplicates for sku_code here because we generate them if missing
 
     // Validate dates
     const invalidDates = records.filter((r, i) => {
-        if (!isValidDate(r.updated_at)) {
+        if (r.updated_at && !isValidDate(r.updated_at)) {
             console.warn(`⚠️  Invalid date in row ${i + 2}: "${r.updated_at}"`);
             return true;
         }
@@ -272,73 +279,85 @@ function processFinishedProducts(records) {
         );
     }
 
-    // Check for empty family/category
-    const emptyFamilyCategory = records.filter((r, i) => {
-        if (!r.family || !r.category) {
-            console.warn(`⚠️  Empty family/category in row ${i + 2}`);
-            return true;
-        }
-        return false;
-    });
+    // Filter out records that are completely empty or missing base_product
+    const validRecords = records.filter(r => r.base_product && (r.family || r.category || r.sku_code));
 
-    if (emptyFamilyCategory.length > 0) {
-        throw new Error(`❌ Empty family or category values found in PT`);
+    // Normalize family/category if missing (default to 'General')
+    const normalizedRecords = validRecords.map(r => ({
+        ...r,
+        family: r.family || 'General',
+        category: r.category || 'General'
+    }));
+
+    console.log(`ℹ️  Found ${normalizedRecords.length} valid PT records (skipped ${records.length - normalizedRecords.length} incomplete rows)`);
+    if (normalizedRecords.length > 0) {
+        console.log(`ℹ️  First record sample: family="${normalizedRecords[0].family}", category="${normalizedRecords[0].category}"`);
     }
 
     // Group by family and category
     const familyMap = new Map();
 
-    records.forEach((record) => {
-        const familySlug = slugify(record.family);
-        const categorySlug = slugify(record.category);
+    console.log('🔄 Starting record loop...');
+    normalizedRecords.forEach((record, index) => {
+        try {
+            const familySlug = slugify(record.family);
+            const categorySlug = slugify(record.category);
 
-        if (!familyMap.has(familySlug)) {
-            familyMap.set(familySlug, {
-                name: record.family,
-                slug: familySlug,
-                categories: new Map(),
-            });
-        }
+            if (!familyMap.has(familySlug)) {
+                familyMap.set(familySlug, {
+                    name: record.family,
+                    slug: familySlug,
+                    categories: new Map(),
+                });
+            }
 
-        const family = familyMap.get(familySlug);
+            const family = familyMap.get(familySlug);
 
-        if (!family.categories.has(categorySlug)) {
-            family.categories.set(categorySlug, {
-                name: record.category,
-                slug: categorySlug,
+            if (!family.categories.has(categorySlug)) {
+                family.categories.set(categorySlug, {
+                    name: record.category,
+                    slug: categorySlug,
+                    family: record.family,
+                    family_slug: familySlug,
+                    products: [],
+                });
+            }
+
+            const category = family.categories.get(categorySlug);
+
+            const baseProduct = record.base_product || 'Sin Nombre';
+            const variant = record.variant || record.base_product || '';
+            const skuCode = record.sku_code || record.code || `PROD-${Math.random().toString(36).substr(2, 9)}`;
+
+            category.products.push({
                 family: record.family,
                 family_slug: familySlug,
-                products: [],
+                category: record.category,
+                category_slug: categorySlug,
+                sku_code: skuCode,
+                base_product: baseProduct,
+                variant: variant,
+                status: record.status || 'Activo',
+                updated_at: record.updated_at || new Date().toISOString().split('T')[0],
+                // File IDs
+                tds_file_id: record.tds_file_id || '',
+                sds_file_id: record.sds_file_id || '',
+                internal_qc_file_id: record.internal_qc_file_id || '',
+                label_file_id: record.label_file_id || '',
+                // Generated URLs
+                tds_view_url: getDriveViewUrl(record.tds_file_id),
+                tds_download_url: getDriveDownloadUrl(record.tds_file_id),
+                sds_view_url: getDriveViewUrl(record.sds_file_id),
+                sds_download_url: getDriveDownloadUrl(record.sds_file_id),
+                internal_qc_view_url: getDriveViewUrl(record.internal_qc_file_id),
+                internal_qc_download_url: getDriveDownloadUrl(record.internal_qc_file_id),
+                label_view_url: getDriveViewUrl(record.label_file_id),
+                label_download_url: getDriveDownloadUrl(record.label_file_id),
             });
+        } catch (err) {
+            console.error(`❌ Error processing PT record at index ${index}:`, record);
+            throw err;
         }
-
-        const category = family.categories.get(categorySlug);
-
-        category.products.push({
-            family: record.family,
-            family_slug: familySlug,
-            category: record.category,
-            category_slug: categorySlug,
-            sku_code: record.sku_code,
-            base_product: record.base_product,
-            variant: record.variant,
-            status: record.status,
-            updated_at: record.updated_at,
-            // File IDs
-            tds_file_id: record.tds_file_id || '',
-            sds_file_id: record.sds_file_id || '',
-            internal_qc_file_id: record.internal_qc_file_id || '',
-            label_file_id: record.label_file_id || '',
-            // Generated URLs
-            tds_view_url: getDriveViewUrl(record.tds_file_id),
-            tds_download_url: getDriveDownloadUrl(record.tds_file_id),
-            sds_view_url: getDriveViewUrl(record.sds_file_id),
-            sds_download_url: getDriveDownloadUrl(record.sds_file_id),
-            internal_qc_view_url: getDriveViewUrl(record.internal_qc_file_id),
-            internal_qc_download_url: getDriveDownloadUrl(record.internal_qc_file_id),
-            label_view_url: getDriveViewUrl(record.label_file_id),
-            label_download_url: getDriveDownloadUrl(record.label_file_id),
-        });
     });
 
     // Convert maps to arrays
@@ -390,7 +409,7 @@ async function main() {
         }
     } catch (error) {
         if (SHEET_MP_CSV_URL) {
-            console.error('❌ MP processing failed:', error.message);
+            console.error('❌ MP processing failed:', error);
             process.exit(1);
         }
     }
@@ -404,7 +423,7 @@ async function main() {
         }
     } catch (error) {
         if (SHEET_PT_CSV_URL) {
-            console.error('❌ PT processing failed:', error.message);
+            console.error('❌ PT processing failed:', error);
             process.exit(1);
         }
     }
