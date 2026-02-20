@@ -62,19 +62,44 @@ function slugify(text) {
 }
 
 /**
- * Generate Google Drive view URL from file ID
+ * Extract Google Drive ID from a full URL or return the ID if already provided as ID
  */
-function getDriveViewUrl(fileId) {
-    if (!fileId || fileId.trim() === '') return null;
-    return `https://drive.google.com/file/d/${fileId.trim()}/view?usp=sharing`;
+function extractDriveId(input) {
+    if (!input || typeof input !== 'string') return null;
+    const trimmed = input.trim();
+    if (trimmed === '') return null;
+
+    // Regex to match Google Drive File ID
+    // 1. Full URL format: https://drive.google.com/file/d/ID/view...
+    const urlMatch = trimmed.match(/\/file\/d\/([a-zA-Z0-9_-]+)/);
+    if (urlMatch && urlMatch[1]) return urlMatch[1];
+
+    // 2. Short URL or direct ID format (IDs are usually 25+ chars)
+    if (!trimmed.includes('/') && trimmed.length > 20) return trimmed;
+
+    // 3. open?id= or uc?id= format
+    const idParamMatch = trimmed.match(/[?&]id=([a-zA-Z0-9_-]+)/);
+    if (idParamMatch && idParamMatch[1]) return idParamMatch[1];
+
+    return trimmed; // Fallback to original if no match, though might be invalid
 }
 
 /**
- * Generate Google Drive download URL from file ID
+ * Generate Google Drive view URL from file ID or URL
  */
-function getDriveDownloadUrl(fileId) {
-    if (!fileId || fileId.trim() === '') return null;
-    return `https://drive.google.com/uc?export=download&id=${fileId.trim()}`;
+function getDriveViewUrl(input) {
+    const fileId = extractDriveId(input);
+    if (!fileId) return null;
+    return `https://drive.google.com/file/d/${fileId}/view?usp=sharing`;
+}
+
+/**
+ * Generate Google Drive download URL from file ID or URL
+ */
+function getDriveDownloadUrl(input) {
+    const fileId = extractDriveId(input);
+    if (!fileId) return null;
+    return `https://drive.google.com/uc?export=download&id=${fileId}`;
 }
 
 /**
